@@ -1,0 +1,17 @@
+{
+  "name": "tarefa_projeto_contagem",
+  "version": "1.0.0",
+  "description": "Criando um projeto de contagem, como tarefa do curso da EBAC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.0",
+    "parcel": "^2.13.0"
+  }
+}
