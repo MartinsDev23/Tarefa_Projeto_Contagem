@@ -1,11 +1,13 @@
+@use './variables';
+
 .evento {
     
     &--sobre-o-local {
-        background-image: linear-gradient(#DCDCDC, #C0C0C0);
+        background-image: linear-gradient(variables.$cinza1, variables.$cinza2);
     }
 
     &--decoração {
-        background-image: linear-gradient(#C0C0C0, #808080);
+        background-image: linear-gradient(variables.$cinza2, variables.$cinza3);
     }
 
 
@@ -18,10 +20,28 @@
         padding-top: 60px;
         padding-bottom: 60px;
 
+        @media (max-width: 640px) {
+            display: block;
+            width: 80%;
+        }
+
+        @media (max-width: 1024px) {
+            display: block;
+            width: 80%;
+        }
+
         &__description {
             
             &__title {
                 margin-bottom: 32px;
+
+                @media (max-width: 640px) {
+                    text-align: center;
+                }
+
+                @media (max-width: 1024px) {
+                    text-align: center;
+                }
             }
         }
         
@@ -37,7 +57,15 @@
     &__image {
         max-width: 25vw;
         border-radius: 5px;
+
+        @media (max-width: 640px) {
+            max-width: 100%;
+            margin-top: 32px;
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 100%;
+            margin-top: 32px;
+        }
     }
-
-
 }
