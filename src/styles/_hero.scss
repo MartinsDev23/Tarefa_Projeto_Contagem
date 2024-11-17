@@ -1,0 +1,128 @@
+.hero {
+        background-image: url(../images/anivesario_fundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 80vh;
+        position: relative;
+
+        @media (max-width: 640px) {
+            height: 80vh;
+        }
+
+        &::before {
+            background-color: #000;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: .5;
+            content: '';
+            z-index: 1;
+        }
+    
+    
+    &__container {
+        max-width: 960px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+        
+        &__image {
+            display: block;
+            height: 80px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            
+            @media (max-width: 640px) {
+                height: 50px;
+            }
+        }
+
+        &__title {
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+            font-family: "Sour Gummy", sans-serif;
+            font-size: 40px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 38px;
+
+            @media (max-width: 640px) {
+                font-size: 24px;
+            }
+
+            .contador {
+                font-family: "Sour Gummy", sans-serif;
+            }
+        }
+
+        &__subscribe {
+            position: relative;
+            z-index: 2;
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            margin-top: 55px;
+            border-radius: 3px;
+
+            @media (max-width: 640px) {
+                display: block;
+                padding: 16px 24px;
+                width: 90%;
+            }
+            
+            &__list {
+                display: flex;
+                gap: 50px;
+                margin: 0 auto;
+
+                @media (max-width: 640px) {
+                    display: block;
+                    
+                }
+
+                &__item {
+                    font-size: 14px;
+
+                    @media (max-width: 640px) {
+                        margin-bottom: 12px;
+                    }
+                    
+                    b {
+                        display: block;
+                        font-size: 18px;
+                        margin-bottom: 4px;     
+                    }
+                }
+            }
+
+            &__button {
+                padding: 12px;
+                background-color: #000;
+                color: #fff;
+                text-decoration: none;
+                margin: 0 auto;
+                font-weight: bold;
+                border-radius: 3px;
+
+                @media (max-width: 640px) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+
+}

@@ -1,0 +1,43 @@
+.evento {
+    
+    &--sobre-o-local {
+        background-image: linear-gradient(#DCDCDC, #C0C0C0);
+    }
+
+    &--decoração {
+        background-image: linear-gradient(#C0C0C0, #808080);
+    }
+
+
+    &__container {
+        display: flex;
+        width: 960px;
+        margin: 0 auto;
+        justify-content: space-between;
+        gap: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__description {
+            
+            &__title {
+                margin-bottom: 32px;
+            }
+        }
+        
+
+    }
+
+    &--image-reverse {
+        .evento__container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__image {
+        max-width: 25vw;
+        border-radius: 5px;
+    }
+
+
+}

@@ -5,11 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu aniversário</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
-
-
+    <header class="hero">
+        <div class="hero__container">
+            <img class="hero__container__image" src="./images/ebac_logo.svg" alt="Logo EBAC">
+            <p class="hero__container__title">
+                <span id="contador-zerado">Faltam</span> <span id="contador"></span> <span id="contador-zerou">para o meu aniversário !</span>
+            </p>
+            <div class="hero__container__subscribe">
+                <ul class="hero__container__subscribe__list">
+                    <li class="hero__container__subscribe__list__item">
+                        <b>Localização</b>
+                        Rua EBAC, Travessa Front-End
+                    </li>
+                    <li class="hero__container__subscribe__list__item">
+                        <b>Tema</b>
+                        Escolha livre
+                    </li>
+                    <li class="hero__container__subscribe__list__item">
+                        <b>Data</b>
+                        20/09/2025 ás 19h
+                    </li>
+                </ul>
+                <a href="#" class="hero__container__subscribe__button">Quero participar</a>
+            </div>
+        </div>
+    </header>
+    <section class="evento evento--sobre-o-local">
+        <div class="evento__container" data-aos="fade-left">
+            <div class="evento__container__description">
+                <h2 class="evento__container__description__title">Sobre o local</h2>
+                <p class="evento__container__description__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates iste quia. Inventore eos quod minima vel molestias deserunt laboriosam maiores voluptate alias odit, ab libero amet! Fugit, odit aliquam!
+                </p>
+            </div>
+            <img class="evento__image" src="./images/fachada_evento.jpg" alt="Fachada">
+        </div>
+    </section>
+    <section class="evento evento--image-reverse evento--decoração">
+        <div class="evento__container" data-aos="fade-right">
+            <div class="evento__container__description">
+                <h2 class="evento__container__description__title">Sobre a decoração</h2>
+                <p class="evento__container__description__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptates iste quia. Inventore eos quod minima vel molestias deserunt laboriosam maiores voluptate alias odit, ab libero amet! Fugit, odit aliquam!
+                </p>
+            </div>
+            <img class="evento__image" src="./images/interior_evento.jpg" alt="Decoração de evento">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
-</html>
+</html> 
